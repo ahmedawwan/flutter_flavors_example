@@ -1,0 +1,68 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "flutter: run main.dart",
+            "type": "shell",
+            "command": "flutter",
+            "args": [
+                "run",
+                "--flavor",
+                "prod",
+                "-t",
+                "lib/main.dart"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "flutter: run main_dev.dart",
+            "type": "shell",
+            "command": "flutter",
+            "args": [
+                "run",
+                "--flavor",
+                "dev",
+                "-t",
+                "lib/main_dev.dart"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "flutter: run main_staging.dart",
+            "type": "shell",
+            "command": "flutter",
+            "args": [
+                "run",
+                "--flavor",
+                "staging",
+                "-t",
+                "lib/main_staging.dart"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
